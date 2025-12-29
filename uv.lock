@@ -164,17 +164,6 @@ wheels = [
 ]
 
 [[package]]
-name = "fastapi-chaiaurcode"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "mcp", extra = ["cli"] },
-]
-
-[package.metadata]
-requires-dist = [{ name = "mcp", extras = ["cli"], specifier = ">=1.25.0" }]
-
-[[package]]
 name = "h11"
 version = "0.16.0"
 source = { registry = "https://pypi.org/simple" }
@@ -298,6 +287,17 @@ cli = [
     { name = "python-dotenv" },
     { name = "typer" },
 ]
+
+[[package]]
+name = "mcp-crash-course"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "mcp", extra = ["cli"] },
+]
+
+[package.metadata]
+requires-dist = [{ name = "mcp", extras = ["cli"], specifier = ">=1.25.0" }]
 
 [[package]]
 name = "mdurl"
